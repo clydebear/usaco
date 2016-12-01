@@ -1,0 +1,4 @@
+﻿  1.1.cpp
+f:\text\usaco\usaco\1.1.cpp(21): warning C4018: “<”: 有符号/无符号不匹配
+f:\text\usaco\usaco\1.1.cpp(26): warning C4018: “<”: 有符号/无符号不匹配
+  usaco.vcxproj -> F:\text\usaco\Debug\usaco.exe
