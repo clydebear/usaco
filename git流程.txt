@@ -1,0 +1,38 @@
+安装：
+sudo apt-get install git-core
+git --version
+设置用户名
+git config --global user.name "Jerry Mouse"
+设置电子邮件ID
+git config --global user.email "jerry@yiibai.com"
+避免PULLING提交合并 
+git config --global branch.autosetuprebase always
+列出GIT设置
+git config --list
+创建新用户
+groupadd dev
+useradd -G devs -d /home/gituser -m -s /bin/bash gituser
+passwd gituser
+初始化
+git --bare init
+生成公共/私有RSA密钥对
+ssh-keygen
+
+1  创建本地ssh
+   ssh-keygen -t rsa -C "13241153187@163.com"  
+2  将ssh配置到GitHub中
+  进入生成的ssh目录 : C:\Documents and Settings\Administrator\.ssh 中, 使用记事本打开 id_rsa.pub 文件, 将该文件中的内容复制;
+  id_rsa.pub 文件内容
+
+3 进入GitHub网站 : 登录GitHub, 选择Account Setting 用户设置 : SSH keys设置--添加
+
+4 验证是否配置成功 : ssh -T git@github.com 
+  成功提示 : 如果出现Hi han1202012! You've successfully authenticated, but GitHub does not provide shell access. 就说明配置成功, 可以连接上GitHub;
+5  配置本地用户和邮箱：
+   git config --global user.name "HanShuliang" //设置用户名  
+   git config --global user.email "13241153187@163.com"  //设置邮箱  
+6  (1) GitHub中创建一个工程
+   工程的https地址: https://github.com/han1202012/TabHost_Test.git .
+   工程的SSH地址 : git@github.com:han1202012/TabHost_Test.git .
+
+7  git push -u origin master 
